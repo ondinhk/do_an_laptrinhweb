@@ -1,0 +1,32 @@
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 2.3rem;
+}
+th{
+    font-size: 1rem;
+}
+td{
+    /* text-align: center; */
+    font-size: 1rem;
+}
+.btn-my-color{
+    background-color: #FFB085;
+}
+.btn-my-color:hover{
+    background-color: #F9E4C8;
+}
+/* button add product */
+.zoom_in_img{
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    width: 400px;
+    height: auto;
+    display: none;
+}
+.zoom:hover .zoom_in_img{
+    display: block;
+}
+.my-color-header{
+    background-color: #334756;
+}

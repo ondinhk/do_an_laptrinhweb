@@ -1,0 +1,121 @@
+:root{
+    --primary--color:#0984e3;
+}
+/* HEADER */
+.my-color-header{
+    background-color: #23333f;
+}
+/* logo */ 
+.logo img{
+    object-fit: contain;
+}
+/* btn-sigin */
+.btn-my-color{
+    background-color: #FFB085;
+}
+.btn-my-color:hover{
+    background-color: #F9E4C8;
+}
+/* CARD FEATURE */
+.col .card .d-flex img{
+    transition: .3s ease-in-out;
+}
+.col:hover img{
+   transform: scale(1.2);
+}
+.link-dark{
+    font-size: 1.2rem;
+}
+a:hover h2{
+    color: var(--primary--color);
+}
+/* upcase */
+.upcase{
+    text-transform: uppercase;
+}
+/* input so luong  buy-item*/
+.card{
+    position: relative;
+}
+.buy_item{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.name_product{
+    font-size: 1.2rem;
+}
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+.inventory{
+    font-size: 0.8rem;
+}
+.input-group-text{
+    font-size: 0.9rem;
+}
+.intro{
+    font-size: 0.8rem;
+}
+.buy_item button{
+    font-size: 1rem;
+}
+.card:hover .buy_item{
+    height:35%;
+}
+
+/* drop down menu */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+/* Mobile width <= 740px */
+@media only screen and (max-width: 46.1875em) {
+    /* style */
+    .mobile{
+        display: none;
+    }
+    .logo h3{
+        /* font-family: 'Lobster', cursive; */
+        font-family: 'Yuji Mai', serif;
+        font-size: 1rem;
+    } 
+    .btn-mobile{
+        display: block;
+    }
+}
+/* Table width >=740px and width <1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    /* style */
+    .tablet{
+        display: block;
+    }
+    .btn-mobile{
+        display: block;
+    }
+}
+/* PC width >=1024 */
+@media only screen and (min-width: 64em){
+    /* style */
+    .pc{
+        display: block;
+    }
+    .logo h3{
+        /* font-family: 'Lobster', cursive; */
+        font-family: 'Yuji Mai', serif;
+        font-size: 2.3rem;
+    }  
+    .btn-mobile{
+        display: none;
+    }
+}
