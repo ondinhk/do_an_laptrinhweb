@@ -4,7 +4,7 @@
         <p class="pb-2 border-bottom"></p>
         <div class=" row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-2">
             <?php
-            $sql = 'SELECT * FROM LoaiHangHoa LIMIT 4';
+            $sql = 'SELECT * FROM loaihanghoa LIMIT 4';
             $resul = db_get_list($sql);
             foreach ($resul as $row) {
                 echo '<div class="col">

@@ -1,5 +1,5 @@
 <?php
-$sql = 'SELECT * FROM LoaiHangHoa';
+$sql = 'SELECT * FROM loaihanghoa';
 $resul = db_get_list($sql);
 ?>
 <footer class="py-3 mt-4 bg-dark">

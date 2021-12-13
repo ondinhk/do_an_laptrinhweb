@@ -3,7 +3,7 @@ require_once('./libs/database.php');
 $id = '';
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $sql_id = 'SELECT * FROM LoaiHangHoa WHERE MaLoaiHang=' . $id;
+    $sql_id = 'SELECT * FROM loaihanghoa WHERE MaLoaiHang=' . $id;
     $result = db_get_row($sql_id);
     if ($result != 1) {
         $name_category = $result['TenLoaiHang'];
